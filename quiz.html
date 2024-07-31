@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "ko">
+
+<head>
+	<title>yoona</title>
+  <meta charset="UTF-8"> <!--올바른 문자열 설정-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel = "stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>self-introduce</h1>
+<hr>
+<div id = "tag">
+  <ol>
+    <li><a href="main.html">기본정보</a></li>
+    <li><a href="love.html">연애사</a></li>
+    <li><a href= "quiz.html">나를 맞춰봥</a></li>
+    <li><a href = "talk.html">대화하기</a></li>
+  </ol>
+  <div id="welcome">
+    <h2>나를 맞춰봥~</h2>
+    <p>1. 다음 중 고3때 좋아했던 인물은?</p>
+    <div class = "idol">
+    <form name = "form">
+      <input type="radio" name="idol_name" value="v1"> 
+      <label for="idol1">nct 도영</label><br>
+      <img src = image\김도영.jpg><br><br>
+     
+      <input type = "radio" name="idol_name" value="v2"> 
+      <label for="idol2">ateez 성화</label><br>
+      <img src = image\박성화.jpg> <br><br>
+      <input type="radio" name="idol_name" value="v3"> 
+      <label for="idol2">몬스타엑스 유기현</label><br>
+      <img src =  image\유기현.jpg> <br><br>
+      <input type="radio" name="idol_name" value="v4">
+      <label for="idol2">더보이즈 주연</label><br>
+      <img src = "image\주연.jpg"><br><br>
+      <input type = "button" name="선택" value="정답확인" onclick="myFunction()">
+    </form>
+  </div>
+    <p id="check"></p>
+    <script type="text/javascript">
+      function myFunction(){
+        if(form.idol_name[1].checked==true){
+          document.getElementById("check").innerHTML="나를 잘 알고있군ㅎ";
+        }
+        else{
+          document.getElementById("check").innerHTML="다시 생각해보십시오";
+        }
+      }
+    </script>
+  </div>
+</div>
+
+
+
+</body>
+
+</html>
